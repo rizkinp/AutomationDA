@@ -1,0 +1,18 @@
+[2025-01-29T06:53:39.778+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-29T06:53:39.786+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movies_etl.transform_and_load manual__2025-01-29T06:53:26.387281+00:00 [queued]>
+[2025-01-29T06:53:39.840+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movies_etl.transform_and_load manual__2025-01-29T06:53:26.387281+00:00 [queued]>
+[2025-01-29T06:53:39.840+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-01-29T06:53:39.850+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_and_load> on 2025-01-29 06:53:26.387281+00:00
+[2025-01-29T06:53:39.855+0000] {standard_task_runner.py:72} INFO - Started process 175 to run task
+[2025-01-29T06:53:39.859+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'movies_etl', 'transform_and_load', 'manual__2025-01-29T06:53:26.387281+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/etl_movies.py', '--cfg-path', '/tmp/tmpi5k2e8th']
+[2025-01-29T06:53:39.861+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask transform_and_load
+[2025-01-29T06:53:39.885+0000] {task_command.py:467} INFO - Running <TaskInstance: movies_etl.transform_and_load manual__2025-01-29T06:53:26.387281+00:00 [running]> on host 76fb3969a3aa
+[2025-01-29T06:53:39.912+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movies_etl' AIRFLOW_CTX_TASK_ID='transform_and_load' AIRFLOW_CTX_EXECUTION_DATE='2025-01-29T06:53:26.387281+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-29T06:53:26.387281+00:00'
+[2025-01-29T06:53:39.913+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-29T06:53:40.421+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/etl_movies.py:42 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-01-29T06:53:45.773+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-01-29T06:53:45.802+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-29T06:53:45.802+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=movies_etl, task_id=transform_and_load, run_id=manual__2025-01-29T06:53:26.387281+00:00, execution_date=20250129T065326, start_date=20250129T065339, end_date=20250129T065345
+[2025-01-29T06:53:45.862+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-29T06:53:45.874+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-29T06:53:45.874+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,17 @@
+[2025-01-30T00:01:18.502+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-30T00:01:18.507+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movies_etl.load_to_staging scheduled__2025-01-29T00:00:00+00:00 [queued]>
+[2025-01-30T00:01:18.509+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movies_etl.load_to_staging scheduled__2025-01-29T00:00:00+00:00 [queued]>
+[2025-01-30T00:01:18.509+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-01-30T00:01:18.578+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_to_staging> on 2025-01-29 00:00:00+00:00
+[2025-01-30T00:01:18.584+0000] {standard_task_runner.py:72} INFO - Started process 1109 to run task
+[2025-01-30T00:01:18.588+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'movies_etl', 'load_to_staging', 'scheduled__2025-01-29T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/etl_movies.py', '--cfg-path', '/tmp/tmpnb7_a7dn']
+[2025-01-30T00:01:18.593+0000] {standard_task_runner.py:105} INFO - Job 24: Subtask load_to_staging
+[2025-01-30T00:01:18.677+0000] {task_command.py:467} INFO - Running <TaskInstance: movies_etl.load_to_staging scheduled__2025-01-29T00:00:00+00:00 [running]> on host 76fb3969a3aa
+[2025-01-30T00:01:18.742+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movies_etl' AIRFLOW_CTX_TASK_ID='load_to_staging' AIRFLOW_CTX_EXECUTION_DATE='2025-01-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-29T00:00:00+00:00'
+[2025-01-30T00:01:18.744+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-30T00:01:21.727+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-01-30T00:01:21.749+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-30T00:01:21.750+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=movies_etl, task_id=load_to_staging, run_id=scheduled__2025-01-29T00:00:00+00:00, execution_date=20250129T000000, start_date=20250130T000118, end_date=20250130T000121
+[2025-01-30T00:01:21.833+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-30T00:01:21.875+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-01-30T00:01:21.877+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
