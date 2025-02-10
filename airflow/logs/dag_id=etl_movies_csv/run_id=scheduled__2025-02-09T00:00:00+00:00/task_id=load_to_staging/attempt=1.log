@@ -1,0 +1,37 @@
+[2025-02-10T03:11:10.019+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-10T03:11:10.069+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_movies_csv.load_to_staging scheduled__2025-02-09T00:00:00+00:00 [queued]>
+[2025-02-10T03:11:10.073+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_movies_csv.load_to_staging scheduled__2025-02-09T00:00:00+00:00 [queued]>
+[2025-02-10T03:11:10.073+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-02-10T03:11:10.082+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_to_staging> on 2025-02-09 00:00:00+00:00
+[2025-02-10T03:11:10.084+0000] {standard_task_runner.py:72} INFO - Started process 108 to run task
+[2025-02-10T03:11:10.086+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_movies_csv', 'load_to_staging', 'scheduled__2025-02-09T00:00:00+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/etl_movies_csv.py', '--cfg-path', '/tmp/tmpurprimzw']
+[2025-02-10T03:11:10.087+0000] {standard_task_runner.py:105} INFO - Job 125: Subtask load_to_staging
+[2025-02-10T03:11:10.111+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_movies_csv.load_to_staging scheduled__2025-02-09T00:00:00+00:00 [running]> on host 76fb3969a3aa
+[2025-02-10T03:11:10.171+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_movies_csv' AIRFLOW_CTX_TASK_ID='load_to_staging' AIRFLOW_CTX_EXECUTION_DATE='2025-02-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-09T00:00:00+00:00'
+[2025-02-10T03:11:10.172+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-10T03:11:10.183+0000] {etl_movies_csv.py:25} INFO - Memulai proses loading data ke staging...
+[2025-02-10T03:11:10.212+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/etl_movies_csv.py:31 FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+[2025-02-10T03:11:10.224+0000] {etl_movies_csv.py:42} INFO - Jumlah NaN per kolom sebelum insert:
+name        0
+rating      0
+genre       0
+year        0
+released    0
+score       0
+votes       0
+director    0
+writer      0
+star        0
+country     0
+budget      0
+gross       0
+company     0
+runtime     0
+dtype: int64
+[2025-02-10T03:11:12.947+0000] {etl_movies_csv.py:62} INFO - Data berhasil dimuat ke staging.
+[2025-02-10T03:11:12.950+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-10T03:11:12.957+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-10T03:11:12.958+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_movies_csv, task_id=load_to_staging, run_id=scheduled__2025-02-09T00:00:00+00:00, execution_date=20250209T000000, start_date=20250210T031110, end_date=20250210T031112
+[2025-02-10T03:11:13.011+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-10T03:11:13.027+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-10T03:11:13.029+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

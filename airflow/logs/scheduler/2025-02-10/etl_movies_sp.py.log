@@ -1,0 +1,175 @@
+[2025-02-10T03:10:57.865+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:10:57.865+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:10:57.866+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:10:57.866+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:10:58.454+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:10:58.464+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:10:58.464+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:10:58.473+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:10:58.473+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-09 00:00:00+00:00, run_after=2025-02-10 00:00:00+00:00
+[2025-02-10T03:10:58.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.622 seconds
+[2025-02-10T03:11:59.598+0000] {processor.py:186} INFO - Started process (PID=133) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:11:59.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:11:59.600+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:11:59.600+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:11:59.991+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:11:59.999+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:11:59.999+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:12:00.013+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:12:00.009+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:12:00.024+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.430 seconds
+[2025-02-10T03:12:30.914+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:12:30.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:12:30.920+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:12:30.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:12:31.308+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:12:31.317+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:12:31.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:12:31.325+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:12:31.325+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:12:31.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.428 seconds
+[2025-02-10T03:13:02.352+0000] {processor.py:186} INFO - Started process (PID=139) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:02.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:13:02.365+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:02.364+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:02.759+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:02.768+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:02.768+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:13:02.775+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:02.775+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:13:02.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.448 seconds
+[2025-02-10T03:13:33.835+0000] {processor.py:186} INFO - Started process (PID=142) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:33.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:13:33.840+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:33.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:34.256+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:13:34.265+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:34.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:13:34.273+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:13:34.273+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:13:34.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.458 seconds
+[2025-02-10T03:14:05.296+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:05.298+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:14:05.303+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:05.303+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:05.729+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:05.737+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:05.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:14:05.745+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:05.745+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:14:05.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.467 seconds
+[2025-02-10T03:14:36.021+0000] {processor.py:186} INFO - Started process (PID=148) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:36.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:14:36.026+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:36.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:36.420+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:14:36.429+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:36.428+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:14:36.437+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:14:36.437+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:14:36.447+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.438 seconds
+[2025-02-10T03:15:06.748+0000] {processor.py:186} INFO - Started process (PID=151) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:06.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:15:06.759+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:06.758+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:07.200+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:07.207+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:07.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:15:07.215+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:07.215+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:15:07.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.494 seconds
+[2025-02-10T03:15:37.512+0000] {processor.py:186} INFO - Started process (PID=154) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:37.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:15:37.517+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:37.517+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:37.905+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:15:37.912+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:37.912+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:15:37.920+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:15:37.920+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:15:37.949+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.446 seconds
+[2025-02-10T03:16:08.151+0000] {processor.py:186} INFO - Started process (PID=157) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:08.152+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:16:08.155+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:08.155+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:08.538+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:08.547+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:08.547+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:16:08.555+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:08.555+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:16:08.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.424 seconds
+[2025-02-10T03:16:39.462+0000] {processor.py:186} INFO - Started process (PID=171) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:39.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:16:39.470+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:39.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:40.082+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:16:40.094+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:40.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:16:40.120+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:16:40.120+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:16:40.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.681 seconds
+[2025-02-10T03:17:10.868+0000] {processor.py:186} INFO - Started process (PID=174) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:10.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:17:10.874+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:10.873+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:11.271+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:11.281+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:11.281+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:17:11.292+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:11.292+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:17:11.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.446 seconds
+[2025-02-10T03:17:42.107+0000] {processor.py:186} INFO - Started process (PID=177) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:42.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:17:42.113+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:42.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:42.499+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:17:42.508+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:42.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:17:42.515+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:17:42.515+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:17:42.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.431 seconds
+[2025-02-10T03:18:13.000+0000] {processor.py:186} INFO - Started process (PID=180) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:13.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:18:13.010+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:13.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:13.390+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:13.399+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:13.399+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:18:13.416+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:13.416+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:18:13.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.443 seconds
+[2025-02-10T03:18:43.842+0000] {processor.py:186} INFO - Started process (PID=183) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:43.844+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:18:43.849+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:43.848+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:44.200+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:18:44.208+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:44.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:18:44.216+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:18:44.216+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:18:44.225+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.396 seconds
+[2025-02-10T03:19:14.610+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:14.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:19:14.617+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:14.616+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:14.983+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:14.992+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:14.992+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:19:15.000+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:15.000+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:19:15.009+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.411 seconds
+[2025-02-10T03:19:45.543+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:45.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:19:45.550+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:45.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:45.982+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:19:45.991+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:45.991+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:19:45.999+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:19:45.999+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:19:46.009+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.482 seconds
+[2025-02-10T03:20:16.420+0000] {processor.py:186} INFO - Started process (PID=192) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:16.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:20:16.429+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:16.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:16.820+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:16.829+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:16.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:20:16.837+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:16.837+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:20:16.846+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.436 seconds
+[2025-02-10T03:20:47.352+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:47.354+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:20:47.357+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:47.356+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:47.754+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:20:47.763+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:47.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:20:47.770+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:20:47.770+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:20:47.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.442 seconds
+[2025-02-10T03:21:18.088+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:18.091+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:21:18.097+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:18.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:18.458+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:18.467+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:18.467+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:21:18.475+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:18.475+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:21:18.484+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.411 seconds
+[2025-02-10T03:21:48.786+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:48.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:21:48.794+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:48.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:49.174+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:21:49.184+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:49.183+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:21:49.192+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:21:49.192+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:21:49.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.430 seconds
+[2025-02-10T03:22:19.447+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:19.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:22:19.454+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:19.453+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:19.815+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:19.825+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:19.824+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:22:19.833+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:19.832+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:22:19.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.408 seconds
+[2025-02-10T03:22:50.079+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:50.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:22:50.086+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:50.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:50.496+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:22:50.505+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:50.505+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:22:50.513+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:22:50.513+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:22:50.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.467 seconds
+[2025-02-10T03:23:20.722+0000] {processor.py:186} INFO - Started process (PID=210) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:20.725+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:23:20.730+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:20.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:21.080+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:21.088+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:21.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:23:21.096+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:21.096+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:23:21.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.397 seconds
+[2025-02-10T03:23:51.248+0000] {processor.py:186} INFO - Started process (PID=213) to work on /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:51.251+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_movies_sp.py for tasks to queue
+[2025-02-10T03:23:51.255+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:51.254+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:51.662+0000] {processor.py:925} INFO - DAG(s) 'etl_movies_sp' retrieved from /opt/airflow/dags/etl_movies_sp.py
+[2025-02-10T03:23:51.671+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:51.670+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-10T03:23:51.680+0000] {logging_mixin.py:190} INFO - [2025-02-10T03:23:51.680+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_movies_sp to 2025-02-10 00:00:00+00:00, run_after=2025-02-11 00:00:00+00:00
+[2025-02-10T03:23:51.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_movies_sp.py took 0.454 seconds
