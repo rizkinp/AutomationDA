@@ -1,0 +1,19 @@
+[2025-03-07T06:47:28.053+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-07T06:47:28.059+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_payments.count_records manual__2025-03-07T06:46:31.524897+00:00 [queued]>
+[2025-03-07T06:47:28.063+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_payments.count_records manual__2025-03-07T06:46:31.524897+00:00 [queued]>
+[2025-03-07T06:47:28.063+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-07T06:47:28.071+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): count_records> on 2025-03-07 06:46:31.524897+00:00
+[2025-03-07T06:47:28.076+0000] {standard_task_runner.py:72} INFO - Started process 133 to run task
+[2025-03-07T06:47:28.080+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_payments', 'count_records', 'manual__2025-03-07T06:46:31.524897+00:00', '--job-id', '161', '--raw', '--subdir', 'DAGS_FOLDER/etl-payments.py', '--cfg-path', '/tmp/tmp96a3eqs4']
+[2025-03-07T06:47:28.082+0000] {standard_task_runner.py:105} INFO - Job 161: Subtask count_records
+[2025-03-07T06:47:28.107+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_payments.count_records manual__2025-03-07T06:46:31.524897+00:00 [running]> on host 98bc23959960
+[2025-03-07T06:47:28.152+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_payments' AIRFLOW_CTX_TASK_ID='count_records' AIRFLOW_CTX_EXECUTION_DATE='2025-03-07T06:46:31.524897+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-07T06:46:31.524897+00:00'
+[2025-03-07T06:47:28.152+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-07T06:47:29.938+0000] {logging_mixin.py:190} INFO - ✅ Total records in payments_cleaned: 69631
+[2025-03-07T06:47:29.940+0000] {etl-payments.py:111} INFO - ✅ Total records in payments_cleaned: 69631
+[2025-03-07T06:47:29.942+0000] {python.py:240} INFO - Done. Returned value was: 69631
+[2025-03-07T06:47:29.964+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-07T06:47:29.964+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_payments, task_id=count_records, run_id=manual__2025-03-07T06:46:31.524897+00:00, execution_date=20250307T064631, start_date=20250307T064728, end_date=20250307T064729
+[2025-03-07T06:47:29.989+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-07T06:47:30.004+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-07T06:47:30.005+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

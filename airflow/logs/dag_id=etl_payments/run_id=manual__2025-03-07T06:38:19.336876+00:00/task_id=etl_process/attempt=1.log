@@ -1,0 +1,23 @@
+[2025-03-07T06:38:26.166+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-07T06:38:26.171+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_payments.etl_process manual__2025-03-07T06:38:19.336876+00:00 [queued]>
+[2025-03-07T06:38:26.174+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_payments.etl_process manual__2025-03-07T06:38:19.336876+00:00 [queued]>
+[2025-03-07T06:38:26.174+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-07T06:38:26.182+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): etl_process> on 2025-03-07 06:38:19.336876+00:00
+[2025-03-07T06:38:26.208+0000] {standard_task_runner.py:72} INFO - Started process 92 to run task
+[2025-03-07T06:38:26.219+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_payments', 'etl_process', 'manual__2025-03-07T06:38:19.336876+00:00', '--job-id', '154', '--raw', '--subdir', 'DAGS_FOLDER/etl-payments.py', '--cfg-path', '/tmp/tmp8da0wdrs']
+[2025-03-07T06:38:26.221+0000] {standard_task_runner.py:105} INFO - Job 154: Subtask etl_process
+[2025-03-07T06:38:26.296+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_payments.etl_process manual__2025-03-07T06:38:19.336876+00:00 [running]> on host b1b7220a736d
+[2025-03-07T06:38:26.379+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_payments' AIRFLOW_CTX_TASK_ID='etl_process' AIRFLOW_CTX_EXECUTION_DATE='2025-03-07T06:38:19.336876+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-07T06:38:19.336876+00:00'
+[2025-03-07T06:38:26.380+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-07T06:38:26.403+0000] {etl-payments.py:31} INFO - 🔹 Mengambil data dari database sumber...
+[2025-03-07T06:38:37.942+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/etl-payments.py:33 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-03-07T06:38:44.686+0000] {etl-payments.py:36} INFO - ✅ Data berhasil diambil!
+[2025-03-07T06:38:44.691+0000] {etl-payments.py:38} INFO - 🔹 Memproses data...
+[2025-03-07T06:38:44.842+0000] {etl-payments.py:59} INFO - ✅ Data berhasil dibersihkan!
+[2025-03-07T06:39:10.456+0000] {etl-payments.py:99} INFO - ✅ Data baru berhasil dimasukkan ke database!
+[2025-03-07T06:39:10.623+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-07T06:39:10.642+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-07T06:39:10.642+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_payments, task_id=etl_process, run_id=manual__2025-03-07T06:38:19.336876+00:00, execution_date=20250307T063819, start_date=20250307T063826, end_date=20250307T063910
+[2025-03-07T06:39:10.730+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-07T06:39:10.774+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-07T06:39:10.776+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
