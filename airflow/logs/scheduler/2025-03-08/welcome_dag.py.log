@@ -3708,3 +3708,45 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'gspread'
 [2025-03-08T04:38:59.908+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/welcome_dag.py
 [2025-03-08T04:38:59.917+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/welcome_dag.py took 0.018 seconds
+[2025-03-08T04:39:30.833+0000] {processor.py:186} INFO - Started process (PID=348) to work on /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:39:30.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/welcome_dag.py for tasks to queue
+[2025-03-08T04:39:30.835+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:30.834+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:39:30.841+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:30.840+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/welcome_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/welcome_dag.py", line 9, in <module>
+    import gspread as gs
+ModuleNotFoundError: No module named 'gspread'
+[2025-03-08T04:39:30.842+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:39:30.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/welcome_dag.py took 0.025 seconds
+[2025-03-08T04:40:02.094+0000] {processor.py:186} INFO - Started process (PID=351) to work on /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:02.095+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/welcome_dag.py for tasks to queue
+[2025-03-08T04:40:02.097+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:02.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:02.102+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:02.101+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/welcome_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/welcome_dag.py", line 9, in <module>
+    import gspread as gs
+ModuleNotFoundError: No module named 'gspread'
+[2025-03-08T04:40:02.103+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:02.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/welcome_dag.py took 0.035 seconds
+[2025-03-08T04:40:32.844+0000] {processor.py:186} INFO - Started process (PID=354) to work on /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:32.844+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/welcome_dag.py for tasks to queue
+[2025-03-08T04:40:32.845+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:32.845+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:32.850+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:32.849+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/welcome_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/welcome_dag.py", line 9, in <module>
+    import gspread as gs
+ModuleNotFoundError: No module named 'gspread'
+[2025-03-08T04:40:32.850+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/welcome_dag.py
+[2025-03-08T04:40:32.864+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/welcome_dag.py took 0.025 seconds

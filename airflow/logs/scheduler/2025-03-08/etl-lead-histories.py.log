@@ -1749,3 +1749,24 @@
 [2025-03-08T04:38:57.546+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:38:57.546+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-08T04:38:57.557+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:38:57.557+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_lead_histories to 2025-03-08 00:00:00+00:00, run_after=2025-03-09 00:00:00+00:00
 [2025-03-08T04:38:57.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl-lead-histories.py took 0.286 seconds
+[2025-03-08T04:39:27.741+0000] {processor.py:186} INFO - Started process (PID=346) to work on /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:27.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl-lead-histories.py for tasks to queue
+[2025-03-08T04:39:27.744+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:27.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:28.034+0000] {processor.py:925} INFO - DAG(s) 'etl_lead_histories' retrieved from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:28.049+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:28.049+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-08T04:39:28.061+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:28.061+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_lead_histories to 2025-03-08 00:00:00+00:00, run_after=2025-03-09 00:00:00+00:00
+[2025-03-08T04:39:28.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl-lead-histories.py took 0.345 seconds
+[2025-03-08T04:39:58.306+0000] {processor.py:186} INFO - Started process (PID=349) to work on /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:58.308+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl-lead-histories.py for tasks to queue
+[2025-03-08T04:39:58.310+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:58.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:58.558+0000] {processor.py:925} INFO - DAG(s) 'etl_lead_histories' retrieved from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:39:58.574+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:58.574+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-08T04:39:58.587+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:39:58.587+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_lead_histories to 2025-03-08 00:00:00+00:00, run_after=2025-03-09 00:00:00+00:00
+[2025-03-08T04:39:58.596+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl-lead-histories.py took 0.303 seconds
+[2025-03-08T04:40:28.854+0000] {processor.py:186} INFO - Started process (PID=352) to work on /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:40:28.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl-lead-histories.py for tasks to queue
+[2025-03-08T04:40:28.857+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:28.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:40:29.102+0000] {processor.py:925} INFO - DAG(s) 'etl_lead_histories' retrieved from /opt/airflow/dags/etl-lead-histories.py
+[2025-03-08T04:40:29.122+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:29.121+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-08T04:40:29.134+0000] {logging_mixin.py:190} INFO - [2025-03-08T04:40:29.134+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_lead_histories to 2025-03-08 00:00:00+00:00, run_after=2025-03-09 00:00:00+00:00
+[2025-03-08T04:40:29.144+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl-lead-histories.py took 0.307 seconds
