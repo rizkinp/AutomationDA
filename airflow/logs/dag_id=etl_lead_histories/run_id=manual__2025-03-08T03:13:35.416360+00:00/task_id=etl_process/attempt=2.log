@@ -1,0 +1,19 @@
+[2025-03-08T03:19:24.166+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-08T03:19:24.171+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:13:35.416360+00:00 [queued]>
+[2025-03-08T03:19:24.174+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:13:35.416360+00:00 [queued]>
+[2025-03-08T03:19:24.174+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 1
+[2025-03-08T03:19:24.180+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): etl_process> on 2025-03-08 03:13:35.416360+00:00
+[2025-03-08T03:19:24.188+0000] {standard_task_runner.py:72} INFO - Started process 90 to run task
+[2025-03-08T03:19:24.192+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_lead_histories', 'etl_process', 'manual__2025-03-08T03:13:35.416360+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/etl-lead-histories.py', '--cfg-path', '/tmp/tmpkgps3ij4']
+[2025-03-08T03:19:24.196+0000] {standard_task_runner.py:105} INFO - Job 213: Subtask etl_process
+[2025-03-08T03:19:24.269+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:13:35.416360+00:00 [running]> on host 49292a09f6e2
+[2025-03-08T03:19:24.403+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_lead_histories' AIRFLOW_CTX_TASK_ID='etl_process' AIRFLOW_CTX_EXECUTION_DATE='2025-03-08T03:13:35.416360+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-08T03:13:35.416360+00:00'
+[2025-03-08T03:19:24.405+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-08T03:19:24.434+0000] {etl-lead-histories.py:88} INFO - 🔹 Memastikan tabel tujuan tersedia...
+[2025-03-08T03:19:24.435+0000] {etl-lead-histories.py:39} INFO - 🔹 Mengecek apakah tabel lead_histories_cleaned sudah ada di MySQL...
+[2025-03-08T03:19:25.268+0000] {etl-lead-histories.py:84} INFO - ✅ Tabel lead_histories_cleaned sudah tersedia atau berhasil dibuat!
+[2025-03-08T03:19:25.277+0000] {etl-lead-histories.py:91} INFO - 🔹 Mengambil data dari PostgreSQL...
+[2025-03-08T03:19:34.394+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-03-08T03:19:34.419+0000] {process_utils.py:132} INFO - Sending 15 to group 90. PIDs of all processes in the group: [90]
+[2025-03-08T03:19:34.427+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 90
+[2025-03-08T03:19:34.482+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses

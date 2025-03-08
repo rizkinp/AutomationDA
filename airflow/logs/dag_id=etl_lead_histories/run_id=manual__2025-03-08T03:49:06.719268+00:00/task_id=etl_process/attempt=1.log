@@ -1,0 +1,28 @@
+[2025-03-08T03:49:09.645+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-08T03:49:09.649+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:49:06.719268+00:00 [queued]>
+[2025-03-08T03:49:09.651+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:49:06.719268+00:00 [queued]>
+[2025-03-08T03:49:09.651+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-08T03:49:09.657+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): etl_process> on 2025-03-08 03:49:06.719268+00:00
+[2025-03-08T03:49:09.661+0000] {standard_task_runner.py:72} INFO - Started process 96 to run task
+[2025-03-08T03:49:09.667+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_lead_histories', 'etl_process', 'manual__2025-03-08T03:49:06.719268+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/etl-lead-histories.py', '--cfg-path', '/tmp/tmpi6ivejup']
+[2025-03-08T03:49:09.671+0000] {standard_task_runner.py:105} INFO - Job 225: Subtask etl_process
+[2025-03-08T03:49:09.717+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T03:49:06.719268+00:00 [running]> on host 7609448f21ac
+[2025-03-08T03:49:09.800+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_lead_histories' AIRFLOW_CTX_TASK_ID='etl_process' AIRFLOW_CTX_EXECUTION_DATE='2025-03-08T03:49:06.719268+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-08T03:49:06.719268+00:00'
+[2025-03-08T03:49:09.804+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-08T03:49:09.858+0000] {etl-lead-histories.py:88} INFO - 🔹 Memastikan tabel tujuan tersedia...
+[2025-03-08T03:49:09.858+0000] {etl-lead-histories.py:39} INFO - 🔹 Mengecek apakah tabel lead_histories_cleaned sudah ada di MySQL...
+[2025-03-08T03:49:10.623+0000] {etl-lead-histories.py:84} INFO - ✅ Tabel lead_histories_cleaned sudah tersedia atau berhasil dibuat!
+[2025-03-08T03:49:10.627+0000] {etl-lead-histories.py:91} INFO - 🔹 Mengambil data dari PostgreSQL...
+[2025-03-08T03:49:51.114+0000] {etl-lead-histories.py:102} INFO - ✅ Data berhasil diambil!
+[2025-03-08T03:49:51.117+0000] {etl-lead-histories.py:105} INFO - 🔹 Memproses data...
+[2025-03-08T03:49:51.738+0000] {etl-lead-histories.py:146} INFO - 🔹 Memeriksa data yang sudah ada di MySQL...
+[2025-03-08T03:49:52.385+0000] {etl-lead-histories.py:156} INFO - 🔍 Data baru yang ditemukan: 268347 record(s)
+[2025-03-08T03:53:29.050+0000] {etl-lead-histories.py:174} INFO - ✅ 268347 data baru berhasil dimasukkan ke database MySQL!
+[2025-03-08T03:53:29.069+0000] {etl-lead-histories.py:180} INFO - ✅ Proses ETL selesai!
+[2025-03-08T03:53:29.507+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-08T03:53:29.521+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-08T03:53:29.522+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_lead_histories, task_id=etl_process, run_id=manual__2025-03-08T03:49:06.719268+00:00, execution_date=20250308T034906, start_date=20250308T034909, end_date=20250308T035329
+[2025-03-08T03:53:29.605+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-08T03:53:29.620+0000] {dagrun.py:977} ERROR - Failed to get task for ti <TaskInstance: etl_lead_histories.count_records manual__2025-03-08T03:49:06.719268+00:00 [None]>. Marking it as removed.
+[2025-03-08T03:53:29.625+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-08T03:53:29.626+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

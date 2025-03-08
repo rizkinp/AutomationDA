@@ -1,0 +1,136 @@
+[2025-03-08T04:15:56.669+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-08T04:15:56.673+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T04:15:53.460741+00:00 [queued]>
+[2025-03-08T04:15:56.675+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T04:15:53.460741+00:00 [queued]>
+[2025-03-08T04:15:56.675+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-08T04:15:56.682+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): etl_process> on 2025-03-08 04:15:53.460741+00:00
+[2025-03-08T04:15:56.687+0000] {standard_task_runner.py:72} INFO - Started process 238 to run task
+[2025-03-08T04:15:56.697+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_lead_histories', 'etl_process', 'manual__2025-03-08T04:15:53.460741+00:00', '--job-id', '234', '--raw', '--subdir', 'DAGS_FOLDER/etl-lead-histories.py', '--cfg-path', '/tmp/tmpx7v6cgzr']
+[2025-03-08T04:15:56.703+0000] {standard_task_runner.py:105} INFO - Job 234: Subtask etl_process
+[2025-03-08T04:15:56.770+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_lead_histories.etl_process manual__2025-03-08T04:15:53.460741+00:00 [running]> on host 83adae75723d
+[2025-03-08T04:15:56.836+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_lead_histories' AIRFLOW_CTX_TASK_ID='etl_process' AIRFLOW_CTX_EXECUTION_DATE='2025-03-08T04:15:53.460741+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-08T04:15:53.460741+00:00'
+[2025-03-08T04:15:56.837+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-08T04:15:56.862+0000] {etl-lead-histories.py:80} INFO - 🔹 Memastikan tabel tujuan tersedia...
+[2025-03-08T04:15:56.864+0000] {etl-lead-histories.py:31} INFO - 🔹 Mengecek apakah tabel lead_histories_cleaned sudah ada di MySQL...
+[2025-03-08T04:15:57.380+0000] {etl-lead-histories.py:76} INFO - ✅ Tabel lead_histories_cleaned sudah tersedia atau berhasil dibuat!
+[2025-03-08T04:15:57.382+0000] {etl-lead-histories.py:83} INFO - 🔹 Mengambil data dari PostgreSQL...
+[2025-03-08T04:16:57.445+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl-lead-histories.py", line 86, in etl_process
+    conn_source = get_db_connection(DB_SOURCE)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl-lead-histories.py", line 27, in get_db_connection
+    return pymysql.connect(**db_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 668, in connect
+    self._get_server_information()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+[2025-03-08T04:16:57.475+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=etl_lead_histories, task_id=etl_process, run_id=manual__2025-03-08T04:15:53.460741+00:00, execution_date=20250308T041553, start_date=20250308T041556, end_date=20250308T041657
+[2025-03-08T04:16:57.494+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-08T04:16:57.494+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 234 for task etl_process ((2013, 'Lost connection to MySQL server during query'); 238)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl-lead-histories.py", line 86, in etl_process
+    conn_source = get_db_connection(DB_SOURCE)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl-lead-histories.py", line 27, in get_db_connection
+    return pymysql.connect(**db_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 668, in connect
+    self._get_server_information()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+[2025-03-08T04:16:57.521+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-08T04:16:57.539+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-08T04:16:57.542+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
